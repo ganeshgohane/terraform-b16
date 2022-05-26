@@ -19,6 +19,7 @@ variable "ami_id" {
 }
 
 variable "instance_type" {
- type =
+ type = string
+  default = 
   
 }
