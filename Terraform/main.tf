@@ -19,5 +19,5 @@ variable "ami_id" {
 }
 
 variable "instance_type" {
- description = "INSTANC
+ description = please enter instanfe
 }
