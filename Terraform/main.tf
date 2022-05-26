@@ -17,3 +17,4 @@ variable "ami_id" {
  default = "ami-079b5e5b3971bd10d"
  description = "AMI-ID"
 }
+
