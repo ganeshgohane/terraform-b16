@@ -7,7 +7,7 @@ resource "aws_security_group" "sg-1" {
     description      = "TLS from VPC"
     from_port        = 443
     to_port          = 443
-    protocol         = "tcp"_
+    protocol         = "tcp"
     cidr_blocks      = [aws_vpc.main.cidr_block]
     ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
   }
