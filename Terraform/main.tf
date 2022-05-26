@@ -19,6 +19,5 @@ variable "ami_id" {
 }
 
 variable "instance_type" {
- 
- description = "INSTANCE-TYPE"
+ description = "INSTANC
 }
