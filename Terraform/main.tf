@@ -1,7 +1,7 @@
 resource "aws_security_group" "allow_tls" {
   name        = "My_security_group"
   description = "ALLOW ALL TRAFFIC"
-  vpc_id      = aws_vpc.main.id
+  vpc_id      = aws_vpc
 
   ingress {
     description      = "TLS from VPC"
