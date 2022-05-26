@@ -1,6 +1,6 @@
 resource "aws_instance" "web-server" {
   ami = var.ami_id
-  instance_type = var.instance_
+  instance_type = var.instance_type
   security_groups = ["default"]
   key_name = "mumbai"
 }
@@ -22,6 +22,4 @@ variable "instance_type" {
  type = string
  default = "t2.micro"
  description = "INSTANCE-TYPE"
-
-  
 }
