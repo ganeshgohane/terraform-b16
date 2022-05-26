@@ -1,4 +1,4 @@
-resource "aws" "name" {
+resource "aws_secu" "name" {
   
 }
 
