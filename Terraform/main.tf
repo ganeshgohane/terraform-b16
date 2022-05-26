@@ -19,5 +19,6 @@ variable "ami_id" {
 }
 
 variable "instance_type" {
- description = "please enter instance type t2.micro or t3.micro"
+ description = "please enter instance type t2.micro or t3.micro" 
+ 
 }
