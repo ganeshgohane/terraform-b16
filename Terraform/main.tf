@@ -1,9 +1,7 @@
 resource "aws_security_group" "sg-1" {
   name        = "MY_security_group"
   description = "ALLOW ALL TRAFFIC"
-  vpc_id      = var.vpc_id
-
-  ingress {
+  vpc_id      = var.vpc_id  ingress {
     description      = "TLS from VPC"
     from_port        = 443
     to_port          = 443
