@@ -1,4 +1,4 @@
-resour
+resource
 
 resource "aws_instance" "app-server" {
   ami = var.ami_id
