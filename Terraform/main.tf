@@ -12,4 +12,4 @@ resource "aws_instance" "app-server" {
   key_name = "mumbai"
 }
  
-variable"
+variable "ami_id"
