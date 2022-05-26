@@ -8,4 +8,6 @@ variable "instance_type" {
  description = "please enter instance type t2.micro or t3.micro"
 }
 
-variable "vpc_id"
+variable "vpc_id" {
+ 
+}
