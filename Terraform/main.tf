@@ -1,13 +1,13 @@
 resource "aws_security_group" "sg-1" {
   name        = "MY_security_group"
   description = "ALLOW ALL TRAFFIC"
-  vpc_id      = aws_vpc.main.id
+  vpc_id      = var.vpc
 
   ingress {
     description      = "TLS from VPC"
     from_port        = 443
     to_port          = 443
-    protocol         = "tcp"
+    protocol         = "tcp"_
     cidr_blocks      = [aws_vpc.main.cidr_block]
     ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
   }
