@@ -18,6 +18,7 @@ variable "ami_id" {
  description = "AMI-ID"
 }
 
-variable "" {
+variable "instance_type" {
+    
   
 }
