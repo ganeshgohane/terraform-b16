@@ -23,7 +23,7 @@ resource "aws_security_group" "allow_tls" {
 resource "aws_instance" "app-server" {
   ami = var.ami_id
   instance_type = var.instance_type
-  vpcsecurity_groups = ["default"]
+  vpc security_group = ["default"]
   key_name = "mumbai"
 }
  
