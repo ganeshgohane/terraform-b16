@@ -24,6 +24,6 @@ resource "aws_instance" "app-server" {
   ami = var.ami_id
   instance_type = var.instance_type
   vpc_security_group_ids =  = [aws_security_group.sg1.id]
-  key_name = "
+  key_name = var.
 }
  
