@@ -13,3 +13,4 @@ resource "aws_instance" "app-server" {
 }
  
 variable "ami_id"
+ type = string
