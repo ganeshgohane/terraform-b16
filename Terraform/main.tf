@@ -14,5 +14,5 @@ resource "aws_instance" "app-server" {
  
 variable "ami_id"
  type = string
-  default = "ami-079b5e5b3971bd10d"
-  
+ default = "ami-079b5e5b3971bd10d"
+ 
