@@ -3,7 +3,7 @@ resource "aws_vpc" "vpc-1" {
   region= "ap-south-1"
 }
 
-resource "aws_subnet" "main" {
+resource "aws_subnet" "vpc-1" {
   vpc_id     = aws_vpc.main.id
   cidr_block = "10.0.1.0/24"
 
