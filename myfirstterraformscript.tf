@@ -10,5 +10,5 @@ resource "aws_instance" "web-server" {
   user_data = << EOF
   !#/bin/bash
   yum install httpd -y
-  echo "</hellow world>
+  echo "</hellow world>" 
 }
