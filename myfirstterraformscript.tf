@@ -9,7 +9,12 @@ resource "aws_instance" "web-server" {
   key_name = "mumbai"
 }
 
-{}
+{
+  tags = {
+		Name = "Terraform"	
+		Batch = "5AM"
+	}
+}
  user_data = << EOF
 #!/bin/bash
 yum update
