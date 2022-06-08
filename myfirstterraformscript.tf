@@ -9,7 +9,8 @@ resource "aws_instance" "web-server" {
   key_name = "mumbai"
 }
 
-{ user_data = << EOF
+{ 
+user_data = << EOF
 #!/bin/bash
 yum update
 yum install httpd -y
