@@ -11,7 +11,7 @@ resource "aws_instance" "web-server" {
 #!/bin/bash
 yum update
 yum install httpd -y
-echo "<h1> THIS IS HOMEPAGE of "$HOSTNAME" </h1>" >/var/www/html/index.html
+echo "<h1> THIS IS HOMEPAGE of "HOSTNAME" </h1>" >/var/www/html/index.html
 systemctl start httpd
 systemctl enable httpd
   EOF
