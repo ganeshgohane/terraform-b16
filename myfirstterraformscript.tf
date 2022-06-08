@@ -12,4 +12,5 @@ resource "aws_instance" "web-server" {
   yum install httpd -y
   touch /var/www/html/index.html
   echo "</hellow world>" >/var/www/html/index.html
+  systemctl 
 }
