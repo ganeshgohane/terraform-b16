@@ -9,7 +9,7 @@ resource "aws_instance" "web-server" {
   key_name = "mumbai"
 }
 
-{  resources
+{ resources
 user_data = << EOF
 #!/bin/bash
 yum update
