@@ -11,5 +11,4 @@ resource "aws_instance" "web-server" {
   !#/bin/bash
   yum install httpd -y
   echo "</hellow world>" >/var/www/html
-  
 }
