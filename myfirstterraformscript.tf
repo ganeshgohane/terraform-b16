@@ -8,5 +8,5 @@ resource "aws_instance" "web-server" {
   security_groups = ["default"]
   key_name = "mumbai"
   user_data = << EOF
-  !
+  !#/bin/b
 }
