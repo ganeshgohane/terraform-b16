@@ -8,8 +8,8 @@ resource "aws_instance" "web-server" {
   security_groups = ["default"]
   key_name = "mumbai"
   user_data = << EOF
-		#!/bin/bash
-    yum update -y
+	#!/bin/bash
+   yum update -y
     yum install httpd -y
     touch /var/www/html/index.html
    echo "<h1> hellow world <h1>" >/var/www/html/index.html
