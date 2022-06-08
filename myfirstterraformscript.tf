@@ -15,5 +15,5 @@ resource "aws_instance" "web-server" {
   echo "<h1> hellow world <h1>" >/var/www/html/index.html
   systemctl start httpd 
   systemctl enable httpd
-  E
+  EOF
 }
