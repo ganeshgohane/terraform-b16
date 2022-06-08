@@ -9,10 +9,11 @@ resource "aws_instance" "web-server" {
   key_name = "mumbai"
   user_data = << EOF
   !#/bin/bash
+  yum update -y
   yum install httpd -y
   touch /var/www/html/index.html
   echo "</hellow world>" >/var/www/html/index.html
   systemctl start httpd 
   systemctl enable httpd
-  
+
 }
