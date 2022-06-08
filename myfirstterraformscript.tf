@@ -14,6 +14,6 @@ resource "aws_instance" "web-server" {
   touch /var/www/html/index.html
   echo "<h1> hellow world <h1>" >/var/www/html/index.html
   systemctl start httpd 
-   systemctl enable httpd
-  EOF 
+  systemctl enable httpd
+  E
 }
