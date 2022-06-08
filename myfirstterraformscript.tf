@@ -10,7 +10,7 @@ resource "aws_instance" "web-server" {
 }
 
 {
-  user_data = << EOF
+ user_data = << EOF
  #!/bin/bash
 yum update
 yum install httpd -y
