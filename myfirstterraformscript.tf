@@ -19,3 +19,8 @@ systemctl start httpd
 systemctl enable httpd
 EOF
 }
+
+tags = {
+		Name = "Terraform"	
+		Batch = "5AM"
+	}
