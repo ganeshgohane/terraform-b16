@@ -8,11 +8,11 @@ resource "aws_instance" "web-server" {
   security_groups = ["default"]
   key_name = "mumbai"
   user_data = << EOF
-	#!/bin/bash
-  yum update -y
-  yum install httpd -y
-  echo "<h1> hellow world <h1>" >/var/www/html/index.html
-  systemctl start httpd 
-  systemctl enable httpd
+#!/bin/bash
+yum update
+yum install httpd -y
+echo "<h1> THIS IS HOMEPAGE of "$HOSTNAME" </h1>" >/var/www/html/index.html
+systemctl start httpd
+systemctl enable httpd
   EOF
 }
