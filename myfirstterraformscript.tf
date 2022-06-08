@@ -8,11 +8,14 @@ resource "aws_instance" "web-server" {
   security_groups = ["default"]
   key_name = "mumbai"
   user_data = << EOF
-	#!/bin/bash
-  yum update -y
-  yum install httpd -y
-  echo "<h1> hellow world <h1>" >/var/www/html/index.html
-  systemctl start httpd 
-  systemctl enable httpd
-  EOF
-}
+		#! /bin/bash
+    sudo apt-get update
+		sudo apt-get install -y apache2
+		sudo systemctl start apache2
+		sudo systemctl enable apache2
+		echo "<h1>Deployed via Terraform</h1>" | sudo tee /var/www/html/index.html
+	EOF
+	tags = {
+		Name = "Terraform"	
+		Batch = "5AM"
+	}
