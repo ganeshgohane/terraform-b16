@@ -9,15 +9,8 @@ resource "aws_instance" "web-server" {
   key_name = "mumbai"
 }
 
-{user_data = << EOF
- #!/bin/bash
-yum update
-yum install httpd -y
-echo "<h1> THIS IS HOMEPAGE of "HOSTNAME" </h1>" >/var/www/html/index.html
-systemctl start httpd
-systemctl enable httpd
-EOF}
-user_data = << EOF
+{
+  user_data = << EOF
  #!/bin/bash
 yum update
 yum install httpd -y
@@ -25,3 +18,4 @@ echo "<h1> THIS IS HOMEPAGE of "HOSTNAME" </h1>" >/var/www/html/index.html
 systemctl start httpd
 systemctl enable httpd
 EOF
+}
