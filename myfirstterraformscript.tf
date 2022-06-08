@@ -9,6 +9,7 @@ resource "aws_instance" "web-server" {
   key_name = "mumbai"
 }
 
+{}
 
 
 tags = {
