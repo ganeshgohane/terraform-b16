@@ -10,6 +10,6 @@ resource "aws_instance" "web-server" {
   user_data = << EOF
   !#/bin/bash
   yum install httpd -y
-  touch /var/www/html
+  touch /var/www/html/index.html
   echo "</hellow world>" >/var/www/html/index.html
 }
